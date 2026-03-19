@@ -37,8 +37,8 @@ app.patch("/api/notes/:id", async(req,res)=>{
     const notes=await noteModel.findByIdAndUpdate(id,{description})
     res.status(200).json({
         message:"upadted succesfully"
-        
-    })
+
+    } )
 
 })
 
